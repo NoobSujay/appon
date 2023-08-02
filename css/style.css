@@ -1,0 +1,948 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    text-align: center;
+    padding-bottom: 26px;
+    
+}
+.title h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #353535;
+    font-weight:700 ;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+/* ===================================
+            nav part start
+======================================= */
+nav{
+    width: 100%;
+    position: absolute;
+    top:56px;
+    left:0;
+    z-index: 1;
+}
+nav .container{
+    display: flex;
+}
+nav .nav-logo{
+    width: 20%;
+}
+nav .nav-items {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav .nav-items ul{
+    text-align: right;
+}
+nav .nav-items ul li{
+    margin-left: 40px;
+    display: inline-block;
+}
+nav .nav-items ul li a{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    transition: .4s;
+    position: relative;
+}
+nav .nav-items ul li a:after{
+    position: absolute;
+    bottom: -6px;
+    left: 0px;
+    width: 30%;
+    height: 2px;
+    background: #744fa0;
+    content: "";
+    transition: .4s;
+    opacity: 0;
+}nav .nav-items ul li a:hover:after{
+    opacity: 1;
+}
+nav .nav-items ul li a:hover{
+    color: #744fa0;
+}
+nav .nav-button{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav .nav-button a{
+    color: #fff;
+    padding: 10px 20px;
+    background: #744fa0;
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    transition: .4s;
+}
+nav .nav-button a:hover{
+    background: #f1f1f1;
+    color: #744fa0;
+}
+/* ===================================
+            nav part end
+======================================= */
+/* ===================================
+            banner part start
+======================================= */
+#banner-part{
+    position: relative;
+}
+#banner-part .home-icon{
+    position: absolute;
+    top: 35%;
+    right: 29px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    z-index: 1;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.banner-slider .slider1{
+    background:url(../images/banner-img1.png) no-repeat center;
+    background-size: cover;
+    
+}
+.banner-slider .slider2{
+    background:url(../images/banner-img2.png) no-repeat center;
+    background-size: cover;
+    
+}
+.banner-slider .slider3{
+    background:url(../images/banner-img3.png) no-repeat center;
+    background-size: cover;
+    
+}
+.banner-slider .overlay{
+    height: 100%;
+    width: 100%;
+    background: #000000a8;
+    text-align: right;
+    padding-top: 240px;
+    padding-bottom: 122px;
+    color: #ffffff;
+}
+.banner-slider .overlay h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 56px;
+    font-weight:700 ;
+    text-transform: uppercase;
+
+}
+.banner-slider .overlay h1:first-letter{
+    color: #744fa0;
+}
+.banner-slider .overlay h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight:300 ;
+    text-transform: capitalize;  
+    position: relative;
+}
+.banner-slider .overlay h3:after{
+    position: absolute;
+    bottom:-30px;
+    right:0;
+    width: 200px;
+    height: 1px;
+    background: #ffffff;
+    content: "";
+
+}
+.banner-slider .overlay p{
+    font-family: 'Opensans', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    width: 470px;
+    margin-left: auto;
+    line-height: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.banner-slider .overlay a{
+    display: inline-block;
+    background: #ffffff;
+    padding: 10px 20px;
+    padding-left: 56px;
+    border-radius: 5px;
+    color: #353535;
+    text-align: left;
+    position: relative;
+    margin-left: 10px;
+    transition: .4s;
+}
+.banner-slider .overlay a:last-child{
+    background: #744fa0;
+    color: #fff;
+}
+.banner-slider .overlay a:hover:last-child{
+    background: #ffffff;
+    color: #353535;
+}
+.banner-slider .overlay a i {
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    font-size: 33px;
+}
+.banner-slider .overlay a span{
+    font-family: 'Opensans', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+
+}
+.banner-slider .overlay a h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:700 ;
+}
+.banner-slider .overlay a:hover{
+    color: #ffffff;
+    background: #744fa0;
+}
+#banner-part .slick-dots{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+#banner-part .slick-dots li{
+    margin: 30px 0;
+}
+#banner-part .slick-dots li button{
+    font-size: 0px;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+}
+
+#banner-part .slick-dots .slick-active button{
+    border-color: #744fa0;
+    position: relative;
+}
+#banner-part .slick-dots .slick-active button:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    content: "";
+    background: #744fa0;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+/* ===================================
+            banner part end
+======================================= */
+/* ===================================
+            about part start
+======================================= */
+#about-part{
+    margin-top: 80px;
+}
+#about-part .container{
+    display: flex;
+}
+#about-part .details{
+    width: 50%;
+    
+}
+#about-part .title{
+    padding-top: 100px;
+}
+#about-part .details p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    text-align: center;
+    width: 544px;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 24px;
+    color: #898989;
+}
+#about-part .image{
+    width: 50%;
+    text-align: center;
+}
+/* ===================================
+            about part end
+======================================= */
+/* ===================================
+            feature part start
+======================================= */
+#feature-part{
+    background: #f1f1f1;
+    padding-bottom: 30px;
+}
+#feature-part .title{
+    padding: 30px 0;
+}
+#feature-part .details{
+    display: flex;
+    justify-content: space-between;
+}
+#feature-part .details .left{
+    width: 30%;
+    
+}
+#feature-part .details .left .phone{
+    position: relative;
+    padding-left: 65px;
+    margin-bottom: 60px;  
+    transition: .4s;
+    cursor: pointer;
+}
+
+#feature-part .details .left .phone:first-child{
+    padding-left: 55px;
+}
+#feature-part .details .left .phone h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:700 ;
+    text-transform: uppercase;
+    color: #353535;
+    margin-bottom: 10px;
+}
+#feature-part .details .left .phone p{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #777777;
+}
+#feature-part .details .left .phone i {
+    font-size: 42px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    color: #353535;
+}
+#feature-part .details .left .phone:after{
+    position: absolute;
+    bottom: -35px;
+    left: 0px;
+    width: 270px;
+    height: 1px;
+    background: #353535;
+    content: "";
+    transition: .4s;
+}
+#feature-part .details .left .phone:last-child:after{
+    opacity:0;
+}
+#feature-part .details .left .phone:last-child{
+    margin-bottom: 0px;
+}
+#feature-part .details .left .phone:hover h4{
+    color: #744fa0;
+}
+#feature-part .details .left .phone:hover p{
+    color: #744fa0;
+}
+#feature-part .details .left .phone:hover i{
+    color: #744fa0;
+}
+#feature-part .details .left .phone:hover:after{
+    background: #744fa0;
+    width: 370px;
+}
+#feature-part .details .middle{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+#feature-part .details .right{
+    width: 30%;
+    text-align: right;
+}
+#feature-part .details .right h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:700 ;
+    color: #353535;
+    margin-bottom: 20px;
+    margin-top: 75px;
+    text-transform: uppercase;
+}
+#feature-part .details .right p{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #777777;
+    margin-bottom: 30px;
+    line-height: 24px;
+    width: 90%;
+    margin-left: auto;
+}
+/* ===================================
+            feature part end
+======================================= */
+/* ===================================
+            screenshot part start
+======================================= */
+#screenshot-part{
+    margin: 80px 0;
+    position: relative;
+   
+}
+#screenshot-part img{
+    margin: 0 10px;
+}
+#screenshot-part  .slick-dots{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+#screenshot-part .slick-dots li{
+    margin: 0px 10px;
+    display: inline-block;
+}
+#screenshot-part  .slick-dots li button{
+    font-size: 0px;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #353535;
+    border-radius: 50%;
+    background: transparent;
+}
+
+#screenshot-part .slick-dots .slick-active button{
+    border-color: #744fa0;
+    position: relative;
+}
+#screenshot-part  .slick-dots .slick-active button:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    content: "";
+    background: #744fa0;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+/* ===================================
+            screenshot part end
+======================================= */
+/* ===================================
+            video part start
+=================================== */
+#video-part{
+    margin-top: 120px;
+}
+#video-part .video{
+    background: url(../images/video-background.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#video-part .video .overlay{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgb(0, 0, 0,.6);
+}
+#video-part .video .overlay i{
+    font-size: 80px;
+    color: #fff;
+    padding: 200px 0;
+}
+/* ===================================
+            video part end
+=================================== */
+/* ===================================
+            pricing part start
+=================================== */
+#pricing-part{
+    margin: 80px 0;
+}
+#pricing-part .prices{
+    display: flex;
+    justify-content: space-between;
+}
+#pricing-part .price-plan{
+    width: 20%;
+    text-align: center;
+}
+
+#pricing-part .price-plan h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:700;
+    color: #353535;
+    text-transform: uppercase;
+    padding: 24px 0px;
+    background: #f1f1f1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: .4s;
+}
+#pricing-part .price-plan .inner-price {
+    padding: 20px;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+#pricing-part .price-plan .inner-price .round{
+    border: 3px solid #f1f1f1;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    margin: auto;
+    position: relative;
+}
+#pricing-part .price-plan .inner-price .round h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 47px;
+    font-weight:700;
+    color: #353535;
+    transform: translateY(10px);
+}
+#pricing-part .price-plan .inner-price .round h1 span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:700;
+    color: #353535;
+}
+#pricing-part .price-plan .inner-price .round p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight:700;
+    color: #555555;
+    text-transform: capitalize;
+    transform: translateY(5px);
+}
+#pricing-part .price-plan ul{
+    background: #f1f1f1;
+    padding: 35px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#pricing-part .price-plan ul li{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    font-weight:400 ;
+    color: #777777;
+    margin-bottom: 18px;
+}
+
+#pricing-part .price-plan a{
+    padding:10px 20px;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    background: #ffffff;
+    display: inline-block;
+    transform: translateY(-50%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight:700;
+    color: #353535;
+    text-transform: capitalize;
+    transition: .4s;
+}
+#pricing-part .price-plan:hover a{
+    background: #744fa0;
+    color: #ffffff;
+}
+#pricing-part .price-plan:hover h3{
+    background: #744fa0;
+    color: #ffffff;
+}
+/* ===================================
+            pricing part end
+=================================== */
+/* ===================================
+            team part start
+=================================== */
+#team-part {
+    margin-bottom: 80px;
+}
+#team-part .team-member {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+#team-part .team-member .member{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+#team-part .team-member .member .img{
+    transition: .4s;
+}
+#team-part .team-member .member .img .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,.7);
+    opacity: 0;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#team-part .team-member .member .img .overlay a i{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #f1f1f1;
+    color: #353535;
+    text-align: center;
+    margin-left: 10px;
+}
+#team-part .team-member .member .img .overlay a:first-child i{
+    margin-left: 0px;
+}
+#team-part .team-member .member .img .overlay a:nth-child(2) i{
+    background: #1da1f2;
+    color: #ffffff;
+}
+#team-part .team-member .member .img img{
+    width: 100%;
+    
+}
+#team-part .team-member .details{
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .4s;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#team-part .team-member .details h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:700;
+    color: #353535;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#team-part .team-member .details h4{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 15px;
+    font-weight:400;
+    color: #555555;   
+    margin-bottom: 20px;
+}
+#team-part .team-member .details p{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    color: #777777;
+    line-height: 30px;
+    width: 70%;
+    margin: auto;
+}
+#team-part .team-member .member:hover .img{
+    transform: translateY(-80px);
+}
+#team-part .team-member .member:hover .details{
+    top: 80%;
+}
+#team-part .team-member .member:hover .overlay{
+    opacity: 1;
+}
+/* ===================================
+            team part end
+=================================== */
+/* ===================================
+            feedback part start
+=================================== */
+#feedback-part{
+    margin-top: 180px;
+}
+#feedback-part .main{
+    background: url(../images/feedback-background.png) no-repeat center;
+    background-size: cover;
+    
+    
+}
+#feedback-part .main .overlay{
+    background: rgba(0, 0, 0,.7);
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+}
+#feedback-part .main .overlay .container .top{
+    width: 800px;
+    height: 100%;
+    margin: auto;
+    background: #f1f1f1;
+    position: relative;
+    border-radius: 5px;
+}
+#feedback-part .main .overlay .container .top .shape{
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%) rotate(45deg);
+}
+#feedback-part .main .overlay .container .top .text-slider .slide{
+    text-align: center;
+    
+}
+#feedback-part .main .overlay .container .top .text-slider .slide p{
+    line-height: 30px;
+    padding: 25px 0;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    color: #777777;
+    width: 670px;
+    margin: auto;
+}
+#feedback-part .main .overlay .container .top .text-slider .slide i{
+    font-size: 14px;
+    color: #744fa0;
+}
+#feedback-part .main .overlay .container .top .text-slider .slide h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:700;
+    color: #353535;
+    text-transform: capitalize;
+    padding: 7px 0;
+}
+#feedback-part .main .overlay .container .top .text-slider .slide span{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    color: #555555;
+    display: inline-block;
+    padding-bottom: 18px;
+    text-transform: capitalize;
+}
+
+#feedback-part .main .overlay .container .bottom{
+    width:450px;
+    height: 100%;
+    margin: auto;
+    margin-top: 60px;
+
+}
+#feedback-part .main .overlay .container .bottom .img{
+    width: 100px !important;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 22px;
+    position: relative;
+    border: 3px solid transparent;
+}
+#feedback-part .main .overlay .container .bottom .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#feedback-part .main .overlay .container .bottom .img .img-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+#feedback-part .main .overlay .container .bottom .slick-current{
+    transform: scale(1.4);
+    border-color: #744fa0;
+    transition: .4s;
+}
+#feedback-part .main .overlay .container .bottom .slick-current .img-overlay{
+    opacity: 0;
+}
+#feedback-part .main .overlay .container .bottom .slick-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+#feedback-part .main .overlay .container .bottom .slick-dots li{
+    display: inline-block;
+    margin-left: 10px;
+}
+#feedback-part .main .overlay .container .bottom .slick-dots li button{
+    font-size: 0px;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background: transparent;
+    position: relative;
+}
+#feedback-part .main .overlay .container .bottom .slick-dots .slick-active button:after{
+    width: 6px;
+    height: 6px;
+    background: #744fa0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    content: "";
+}
+#feedback-part .main .overlay .container .bottom .slick-dots li:last-child button{
+    display: none;
+}
+
+#feedback-part .main .overlay .container .bottom .slick-dots .slick-active button{
+    border-color: #744fa0;
+    position: relative;
+}
+
+/* ===================================
+            feedback part end
+=================================== */
+
+/* ===================================
+            form part start
+=================================== */
+#form-part{
+    padding: 80px 0;
+    text-align: center;
+}
+#form-part .container{
+    width: 1170px;
+    height: 100%;
+}
+#form-part form .top{
+    display: flex;
+    justify-content: space-between;
+}
+#form-part  input{
+    width: 350px;
+    height: 48px;
+    padding:0 10px;
+    border-radius: 5px;
+    border-color: #353535;
+}
+#form-part input::placeholder{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    color: #777777;
+}
+#form-part textarea{
+    width: 100%;
+    margin-top: 30px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #353535;
+    box-sizing: border-box;
+    resize: none;
+}
+#form-part textarea::placeholder{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    color: #777777;
+}
+#form-part button{
+    padding:10px 20px ;
+    background: #744fa0;
+    margin: 30px ;
+    color: #fefefe;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:700;
+    display: inline-block;
+}
+/* ===================================
+            form part end
+=================================== */
+/* ===================================
+            footer part start
+=================================== */
+footer{
+    text-align: center;
+    background: #353535;
+    padding: 30px 0;
+}
+footer .link{
+    margin-top: 30px;
+}
+footer .link a i{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #f1f1f1;
+    color: #353535;
+    text-align: center;
+    margin-left: 10px;
+}
+footer .link a:first-child i{
+    margin-left: 0px;
+    transition: .4s;
+}
+footer .link a:nth-child(3) i{
+    background: #1da1f2;
+    color: #ffffff;
+    transition: .4s;
+}
+footer .link a i:hover{
+    background: #1da1f2;
+    color: #ffffff;
+}
+footer .link a:nth-child(3) i:hover{
+    background: #f1f1f1;
+    color: #353535;
+}
+footer p{
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    color: #f1f1f1;
+    margin-top: 30px;
+}
+footer p span{
+    color: #744fa0;
+}
+/* ===================================
+            footer part end
+=================================== */
